@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun rawat portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            background-color: rgb(12, 12, 68);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+           
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.4rem;
+            transition: all 0.5s ease-in-out 0s;
+
+        }
+       
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 130px 0;
+           
+            
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            width: 34px;
+            font-size: 3rem;
+
+        }
+        .leftsection .btn
+        {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightsection {
+
+            width: 34px;
+        }
+
+        .purple {
+            color: rgb(180, 92, 180);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+           
+
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+           
+
+
+
+        }
+        
+
+        main hr {
+            border: 0;
+            background: #5754a0;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondsection.vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .paragraphs
+         {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 85%;
+            font-size: 25px;
+        }
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+
+
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+
+        }
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+
+
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+
+        }
+        .fifthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+
+
+        }
+
+        .fifthsection h1 {
+            font-size: 1.9rem;
+
+        }
+
+        .top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150px;
+            font-size: 12px;
+        }
+        .footer{
+            padding: 20px 0;
+            background-color: rgb(15, 7, 49);
+        }
+        .footer .social{
+            text-align: center;
+            padding-bottom: 25px;
+            color: #ffffff;       
+        }
+        .footer .social a{
+            font-size: 24px;
+            color: inherit;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+        .footer .social a:hover{
+            opacity: 1;
+        }
+        .footer ul{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .footer ul li a{
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        .footer ul li{
+            display: inline-block;   /*text inlined */
+            padding: 0 15px;
+
+        }
+        .footer ul li a:hover{
+            opacity: 1;
+        }
+        .footer .copyrights{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 20px ;
+            color: #aaa;
+
+        }
+        
+        table,th,td{
+            align-items: center;
+            margin: 40px ;
+            position: static;
+            border: 1px solid;
+            border-collapse: collapse;
+            height: 80%;
+            width: 60%;
+            padding: 15px; 
+            text-align: center;  
+
+            
+            
+        }
+        tr:hover {background-color: rgb(4, 129, 21) ;}
+       
+        th{
+            background-color: #170d49;
+            font-size: 30px;
+            font-family: serif;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        div.box{
+            padding: 0;
+        }
+        .box{
+            position: relative;
+            width: 250px;
+            perspective: 1000px;
+            transition: all 0.5s ease-in-out 0.5s;
+        }
+        .box:hover{
+            transform: scale(1.1);
+            box-shadow: 1px 2px 10px 5px solid #000;
+        }
+        .box .box-img {
+            transform: rotateY(0);
+            transition: all 0.5s ease-in-out 0s;
+        }
+        .box:hover .box-img{
+            transform: rotatey(-90deg);
+        }
+        .box .box-img img{
+            width: 250px;
+            height: 380px;
+            border: 2px solid #000;
+            border-radius: 10px;
+
+        }
+        .box .content{
+            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 90px  20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 10px;
+            transform: rotateY(90deg);    /*it remove gray backgrond in beg and tranfrom in hover*/
+            transition: all 0.5s ease-in-out 0s;
+        }
+        .box:hover .content{                  /*on hover showing content*/
+            transform: rotateY(0);
+
+        }
+        .box .content p{
+            border-top: 1px solid white ;
+            border-bottom: 1px solid white ;
+            padding: 20px 0;
+            margin: 0 25px;
+
+
+        }
+        .box .button{
+            background: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 260px  50px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            transform: rotateY(90deg);    /*it remove gray backgrond in beg and tranfrom in hover*/
+            transition: all 0.5s ease-in-out 0s;
+        }
+        .box:hover .button{
+            transform: rotateY(0); 
+        }
+        .box .button li{
+            list-style: none;
+            padding: 15px 0;
+        }
+        .box .button li a{
+            color: white;
+            text-decoration: none;
+            border: 1px solid transparent;
+            padding: 5px 10px;
+            background: #27ae60;
+            border-radius: 50px;
+        }
+        .box .button li a:hover{
+            background: #10890c;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="home1">
+        <nav >
+            <div class="left" >Tarun rawat's portfolio</div>
+            <div class="right">
+                <ul >
+                    <li><a href="#home1">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#Career Objective">Career Objective</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact me">Contact Info</a></li>
+                    
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main ><br>
+        <section class="firstsection"  >
+            <div class="leftsection" >Hi, My name is <span class="purple">Tarun</span>
+                <div>
+                    and I am a passionate<br> Web Developer.
+                </div>
+                <div class="buttons">
+                    <button class="btn">Download resume</button>
+                    <button class="btn" >CV</button>
+                    
+                </div>
+            </div>
+            
+            <div class="rightsection">
+                <img src="p5.png">
+                
+            </div>
+        </section>
+        <p id="education"></p>
+       
+        <hr>
+        <section class="secondsection">
+            
+            <br><br><br>
+            <h1>Education</h1><br><br><br><br>
+            <div class="box">
+                <div class="vertical">
+                    <img class="top" src="slack.png">
+                    <div class="vertical-title"> Class 10<sup>th</sup> (2020)</div>
+                    <div class="vertical-desc">
+                    </div>
+                    <div class="vertical-desc">
+                        completed 10 from purkal youth development society
+                        learning academy with 80% percentage
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top" src="slack.png">
+                    <div class="vertical-title"> Class 12<sup>th</sup> (2022)</div>
+                    <div class="vertical-desc">
+                    </div>
+                    <div class="vertical-desc">
+                        completed 12 from purkal youth development society
+                        learning academy with 78% percentage
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top" src="slack.png">
+                    <div class="vertical-title"> BCA (2022-2025)</div>
+                    <div class="vertical-desc">
+                    </div>
+                    <div class="vertical-desc">
+                        Doing Bachelor of computer application from
+                        Dit university.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="top" src="slack.png">
+                    <div class="vertical-title">Further studies</div>
+                    <div class="vertical-desc">
+                    </div>
+                    <div class="vertical-desc">
+                        will be seen as per the demand and situation.
+                    </div>                    
+                </div>
+            </div>
+        </section><br><br>
+        <p id="Career Objective"></p>
+
+
+        <hr>
+        <section class="thirdsection"><br><br>
+            <h1>Career Objective</h1>
+
+           
+                
+             <div class="paragraphs">As a BCA (Bachelor of computer Application) 2nd year student. I am eager to begin my career in
+                the technology industry and utilize the skills and knowledge I have gained throughout my studies
+                    .My objective is to work innovatively and Enthusiastically for the enhancement and betterment of
+                    education. I wish to work for a company which offers career growth and give opportunity to learn
+                    and improve my knowledge. <br>
+                    <br>
+                    <br>
+                
+                To earn the post in a company i will give alll my IT skills towards the efficient functioing of the IT system.seeking 
+              work as a lead web developer with Next Generation Web development Web designto full fill clients demands.  </div>
+        </section>
+        <p id="skills"></p>
+
+
+   
+        <hr>
+        
+        <section class="fourthsection"><br>
+            <h1>Skills</h1>
+            <table id="table1">
+                <thead><tr>
+                    <th>Skill</th>
+                    <th>level</th>
+                    <th>star</th>
+                </tr></thead>
+              
+             
+                <tr>
+                    <td>Java</td>
+                    <td>Intermediate</td>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <td>DBMS</td>
+                    <td>Expert</td>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                    <td>****</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                    <td>*****</td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>Beginer</td>
+                    <td>**</td>
+                </tr>
+                <tr>
+                    <td>MY SQL</td>
+                    <td>Expert</td>
+                    <td>****</td>
+                </tr>
+                
+            </table>
+
+            
+        </section>
+        <p id="Projects"></p>
+        <br>
+
+
+        <hr>
+        <section class="fifthsection"><br>
+            <h1>Projects</h1>
+            <br><br><br>
+
+
+
+
+
+            <div class="main">
+                <div class ="box">
+                    <div class="box-img">
+                        <img src="1.jpg">
+            
+                    </div>
+                    <div class="content">
+                        <h3>Project 1</h3>
+                        <p>Stopwatch</p>
+                    </div>
+                    <div class="button">
+                        <li><a class="b1" href="#">Watch now</a></li>
+                    </div>
+                </div>
+                <div class ="box">
+                    <div class="box-img">
+                        <img src="2.jpg">
+            
+                    </div>
+                    <div class="content">
+                        <h3>Project 2</h3>
+                        <p>Clock</p>
+                    </div>
+                    <div class="button">
+                        <li><a class="b1" href="#">Watch now</a></li>
+                    </div>
+                </div>
+                <div class ="box">
+                    <div class="box-img">
+                        <img src="3.jpg">
+            
+                    </div>
+                    <div class="content">
+                        <h3>Project 3</h3>
+                        <p>Calculator</p>
+                    </div>
+                    <div class="button">
+                        <li><a class="b1" href="#">Watch now</a></li>
+                    </div>
+                </div>
+                <div class ="box">
+                    <div class="box-img">
+                        <img src="4.jpg">
+            
+                    </div>
+                    <div class="content">
+                        <h3>Project 4</h3>
+                        <p>Quiz</p>
+                    </div>
+                    <div class="button">
+                        <li><a class="b1" href="#">Watch now</a></li>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            </div>
+        </section>
+        <p id="Contact me"></p>
+    </main><br><br>
+
+    <section class="footer"> 
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-snapchat"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+        <ul class="list">
+           <li><a href="">Home</a></li> 
+           <li><a href="">Service</a></li> 
+           <li><a href="">About</a></li> 
+           <li><a href="">Terms</a></li> 
+           <li><a href="">Privacy policy</a></li> 
+           
+        </ul>
+        <p class="copyrights">
+            WWW.Tarun's portfolio.com  | All rights is reserved no &copy; copy right</div>
+        </p>
+
+    </section>
+</body>
+
+</html>
